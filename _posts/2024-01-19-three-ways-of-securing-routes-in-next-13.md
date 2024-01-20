@@ -35,7 +35,7 @@ Let's perform some code cleanup. Remove all the code found on the "page.tsx" fil
 export default function HomePage(){
   return (
     <main className="text-center h-screen flex justify-center items-center">
-      <p>Home page</p>
+      <h1>Home page</h1>
     </main>
   );
 };
@@ -46,7 +46,7 @@ For this tutorial, the home page will be represented by the 'page.tsx' file loca
 export default function ProfilePage(){
   return (
     <main className="text-center h-screen flex justify-center items-center">
-      <p>Profile page</p>
+      <h1>Profile page</h1>
     </main>
   );
 };
@@ -54,3 +54,45 @@ export default function ProfilePage(){
 Repeat this procedure for the 'Dashboard,' 'Admin,' and 'Settings' folders, ensuring each includes a 'page.tsx' file. Once you've completed this, congratulations, you've successfully established your routes.
 
 As mentioned earlier, we'll now delve into various methods to secure your routes.
+
+### **1. Client-Side Route Security**
+
+Client-side route protection proves beneficial in scenarios where you aim to restrict access for unauthenticated users to specific sections of your application on the client side.
+
+This approach is suitable when you prefer a quick and uncomplicated method of securing routes, particularly in situations with minimal security requirements or public websites.
+
+For the sake of simplicity, we won't delve into complex authentication processes in this tutorial. Instead, we'll create a function to store the authentication value.
+
+To facilitate authentication, generate an 'Auth.ts' file within the 'Utils' folder located at the root of your Next.js app. Populate the file with the following code:
+
+```
+export const isAuthenticated = false
+```
+
+To enhance the security of your Profile route within a client component, we'll employ the useLayoutEffect. Let's explore its functionality by examining the code below:
+
+```
+// profile/page.tsx
+
+"use client";
+
+import {isAuthenticated} from '@/Utils/Auth';
+import { redirect } from 'next/navigation';
+import { useLayoutEffect } from 'react';
+
+export default function ProfilePage(){
+
+useLayoutEffect(() => {
+      const isAuth = isAuthenticated;
+      if(!isAuth){
+        redirect("/")
+      }
+    }, [])
+
+  return (
+    <main className="text-center h-screen flex justify-center items-center">
+      <h1>Profile page</h1>
+    </main>
+  );
+};
+```
