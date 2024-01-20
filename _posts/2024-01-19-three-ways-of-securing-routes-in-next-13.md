@@ -1,5 +1,11 @@
 # Next.js 13 Secure Routing: Exploring three secure approaches
-### [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
+>
+- [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
+- [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
+- [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
+- [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
+
+  
 ### **Introduction**
 > Securing routes is a crucial aspect of web app development, especially when dealing with user authentication. It entails managing access to specific routes based on the user's authentication status. For example, you wouldn't want an unauthenticated user to access an admin dashboard or view sensitive data.
 
