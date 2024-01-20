@@ -7,7 +7,7 @@
 - [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
 - [Server-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#2-server-side-route-security-)
 - [Middleware Based Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#3-middleware-based-route-security-)
-- [Summary](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#3-middleware-based-route-security-)
+- [Summary](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#summary)
 
 
   
