@@ -1,7 +1,7 @@
 # Next.js 13 Secure Routing: Exploring three secure approaches
 
 - [Introduction](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
-- [What is Routing](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
+- [What is Routing In React](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
 - [Create Route In Next.js App](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#create-route-in-nextjs-app)
 - [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
 - [Server-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#2-server-side-route-security-)
@@ -26,7 +26,7 @@ npx create-next-app@latest
 ```
 After you've installed Next.js successfully, follow the prompts to set up your application. I suggest choosing the app router – it's the go-to option for routing in Next.js 13. In this tutorial, we'll be using Tailwind CSS for styling and adding TypeScript for extra functionality.
 
-### **What is Routing**
+### **What is Routing in React**
 Unlike React applications that often depend on third-party packages like react-router-dom for routing, Next.js 13 comes with its own integrated app router. This router offers support for shared layouts, nested routing, loading states, error handling, and more.
 
 In Next.js, routes are organized through a file-based system. Routes are defined by folders containing page.js files, and these folders can also include one or more subfolders.
