@@ -96,3 +96,65 @@ useLayoutEffect(() => {
   );
 };
 ```
+In this code example, we've demonstrated a simple yet effective method for safeguarding routes within a client component.
+
+By integrating the useLayoutEffect hook with an authentication check and the redirect function, we've established a basic route protection mechanism. Unauthenticated users are redirected from the protected route to the 'Home' route, bolstering the security of your application.
+
+Within the Profile component, we employ the useLayoutEffect hook to assess the user's authentication status upon component mounting. The isAuthenticated function is called, and its result is stored in the isAuth variable.
+
+If the user is authenticated, isAuth will be true; otherwise, it will be false. We then verify if the user is not authenticated (i.e., if isAuth is false). In such cases, we utilize the redirect function to reroute them to the homepage or another designated landing page. This effectively bars unauthenticated users from accessing the protected route.
+
+Alternatively, we can refine the code above to safeguard the Profile route by employing a Higher Order Component (HOC), offering a cleaner approach to securing routes on the client side.
+
+To implement a HOC, create a file named 'isAuth' inside the 'components' folder and include the following code:
+```
+// isAuth.tsx
+
+"use client";
+import { isAuthenticated } from "@/Utils/Auth";
+import { useEffect } from "react";
+import { redirect } from "next/navigation";
+
+
+export default function isAuth(Component: any) {
+  return function IsAuth(props: any) {
+    const auth = isAuthenticated;
+
+
+    useEffect(() => {
+      if (!auth) {
+        return redirect("/");
+      }
+    }, []);
+
+
+    if (!auth) {
+      return null;
+    }
+
+    return <Component {...props} />;
+  };
+}
+```
+The provided code defines a Higher Order Component (isAuth) responsible for verifying the user's authentication status. In cases where the user is not authenticated, it intervenes to prevent the rendering of the protected component and reroutes them to the homepage.
+
+We will employ this Higher Order Component to secure the 'Dashboard' route within our application. The protection is achieved by encapsulating the protected component with the isAuth HOC, as illustrated below:
+```
+// dashboard/page.tsx
+
+import isAuth from "@/Components/isAuth";
+
+const Dashboard = () => {
+  return (
+    <main className=" h-screen flex justify-center items-center">
+      <h1>Dashboard</h1>
+    </main>
+  );
+};
+
+
+export default isAuth(Dashboard);
+```
+The code above seamlessly incorporates the isAuth HOC with the Dashboard component, guaranteeing the protection of the dashboard accessible exclusively to authenticated users. In cases where a user lacks authentication, the isAuth HOC directs them to an alternative route as specified.
+
+Congratulations! We've effectively secured our routes on the client side, employing both useLayoutEffect and Higher Order Components.
