@@ -1,5 +1,6 @@
 # Next.js 13 Secure Routing: Exploring three secure approaches
 
+### **Table Of Contents:**
 - [Introduction](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
 - [What is Routing In React](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
 - [Create Route In Next.js App](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#create-route-in-nextjs-app)
