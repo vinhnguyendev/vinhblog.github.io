@@ -2,11 +2,12 @@
 
 ### **Table Of Contents:**
 - [Introduction](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
-- [What is Routing In React](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
+- [What is Routing In React](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#what-is-routing)
 - [Create Route In Next.js App](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#create-route-in-nextjs-app)
 - [Client-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#1-client-side-route-security)
 - [Server-Side Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#2-server-side-route-security-)
 - [Middleware Based Route Security](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#3-middleware-based-route-security-)
+- [Summary](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#3-middleware-based-route-security-)
 
 
   
@@ -239,7 +240,7 @@ All this magic is done using Next.js tools like NextResponse and NextRequest, wh
 
 So, with this code, your 'Settings' page stays safe, and only the right people with the right pass can access it.
 
-## ** Summary **
+## **Summary **
 Protecting routes is a vital part of building web apps, especially when it comes to keeping sensitive information safe and controlling access to specific features.
 
 Throughout this tutorial, we've covered three thorough methods to secure routes in Next.js 13, ensuring that only authorized users can access certain parts. By applying these techniques, you can strengthen your app's security and provide a better user experience.
