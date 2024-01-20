@@ -2,7 +2,7 @@
 
 ![Image of the police](https://images.unsplash.com/photo-1618060931775-18ed14951776?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-### **Table Of Contents:**
+## **Table Of Contents:**
 - [Introduction](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#introduction)
 - [What is Routing In React](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#what-is-routing)
 - [Create Route In Next.js App](https://github.com/vinhnguyendev/vinhblog.github.io/blob/main/_posts/2024-01-19-three-ways-of-securing-routes-in-next-13.md#create-route-in-nextjs-app)
@@ -13,7 +13,7 @@
 
 
   
-### **Introduction**
+## **Introduction**
 > Securing routes is a crucial aspect of web app development, especially when dealing with user authentication. It entails managing access to specific routes based on the user's authentication status. For example, you wouldn't want an unauthenticated user to access an admin dashboard or view sensitive data.
 
 Before diving into the tutorial, ensure you have the following prerequisites:
@@ -31,14 +31,14 @@ npx create-next-app@latest
 ```
 After you've installed Next.js successfully, follow the prompts to set up your application. I suggest choosing the app router – it's the go-to option for routing in Next.js 13. In this tutorial, we'll be using Tailwind CSS for styling and adding TypeScript for extra functionality.
 
-### **What is Routing in React**
+## **What is Routing in React**
 Unlike React applications that often depend on third-party packages like react-router-dom for routing, Next.js 13 comes with its own integrated app router. This router offers support for shared layouts, nested routing, loading states, error handling, and more.
 
 In Next.js, routes are organized through a file-based system. Routes are defined by folders containing page.js files, and these folders can also include one or more subfolders.
 
 Implementing protected routes is made straightforward with Next.js. Before delving into the creation of protected routes, let's first grasp the basics of how routes are established.
 
-### **Create Route in Next.js App**
+## **Create Route in Next.js App**
 To demonstrate the different ways we can protect routes in Next.js 13, we will create routes: Home, Dashboard, Admin, Settings, and Profile page routes.
 
 Let's perform some code cleanup. Remove all the code found on the "page.tsx" file of the app folder and insert the following code:
@@ -69,7 +69,7 @@ Repeat this procedure for the 'Dashboard,' 'Admin,' and 'Settings' folders, ensu
 
 As mentioned earlier, we'll now delve into various methods to secure your routes.
 
-### **1. Client-Side Route Security**
+## **1. Client-Side Route Security**
 
 Client-side route protection proves beneficial in scenarios where you aim to restrict access for unauthenticated users to specific sections of your application on the client side.
 
