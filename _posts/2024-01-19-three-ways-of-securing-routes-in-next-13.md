@@ -17,14 +17,14 @@ npx create-next-app@latest
 ```
 After you've installed Next.js successfully, follow the prompts to set up your application. I suggest choosing the app router – it's the go-to option for routing in Next.js 13. In this tutorial, we'll be using Tailwind CSS for styling and adding TypeScript for extra functionality.
 
-**What is Routing
+### **What is Routing**
 Unlike React applications that often depend on third-party packages like react-router-dom for routing, Next.js 13 comes with its own integrated app router. This router offers support for shared layouts, nested routing, loading states, error handling, and more.
 
 In Next.js, routes are organized through a file-based system. Routes are defined by folders containing page.js files, and these folders can also include one or more subfolders.
 
 Implementing protected routes is made straightforward with Next.js. Before delving into the creation of protected routes, let's first grasp the basics of how routes are established.
 
-** Create Route in Next.js App
+### **Create Route in Next.js App**
 To demonstrate the different ways we can protect routes in Next.js 13, we will create routes: Home, Dashboard, Admin, Settings, and Profile page routes.
 
 Let's perform some code cleanup. Remove all the code found on the "page.tsx" file of the app folder and insert the following code:
