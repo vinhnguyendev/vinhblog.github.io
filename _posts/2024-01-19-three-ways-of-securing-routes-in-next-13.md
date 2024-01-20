@@ -171,7 +171,7 @@ The code above seamlessly incorporates the isAuth HOC with the Dashboard compone
 
 Congratulations! We've effectively secured our routes on the client side, employing both useLayoutEffect and Higher Order Components.
 
-## **2. Server-Side Route Security **
+## **2. Server-Side Route Security**
 Next.js components default to server-side protection, offering an ideal solution for safeguarding server-rendered content. This method proves valuable when ensuring certain routes stay off-limits to unauthenticated users, preventing any potential exposure of sensitive information.
 
 The process of securing routes on the server side is straightforward. With all components in Next.js inherently being server components, protection is seamlessly applied. The practical implementation is illustrated below:
@@ -203,7 +203,7 @@ export default Admin;
 ```
 The provided code exemplifies route protection on server components, guaranteeing exclusive access to the admin page for authenticated users. Any attempt by an unauthenticated user to access this route results in a redirection to the homepage.
 
-## **3. Middleware-Based Route Security **
+## **3. Middleware-Based Route Security**
 Adding security to your Next.js app's routes is like setting up strong barriers to keep things safe. Think of it as using special guards called middleware. These guards watch who's trying to access different parts of your app and make sure only the right people get in.
 
 It's like having a bouncer at a party – they check invitations and only let in the invited guests. This is super helpful when your app has secret information or different levels of access for users.
@@ -240,7 +240,7 @@ All this magic is done using Next.js tools like NextResponse and NextRequest, wh
 
 So, with this code, your 'Settings' page stays safe, and only the right people with the right pass can access it.
 
-## **Summary **
+## **Summary**
 Protecting routes is a vital part of building web apps, especially when it comes to keeping sensitive information safe and controlling access to specific features.
 
 Throughout this tutorial, we've covered three thorough methods to secure routes in Next.js 13, ensuring that only authorized users can access certain parts. By applying these techniques, you can strengthen your app's security and provide a better user experience.
