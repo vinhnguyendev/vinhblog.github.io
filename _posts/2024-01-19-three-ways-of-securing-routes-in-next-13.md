@@ -1,4 +1,5 @@
 # Next.js 13 Secure Routing: Exploring three secure approaches
+### 1. Client-Side Route Security
 ### **Introduction**
 > Securing routes is a crucial aspect of web app development, especially when dealing with user authentication. It entails managing access to specific routes based on the user's authentication status. For example, you wouldn't want an unauthenticated user to access an admin dashboard or view sensitive data.
 
